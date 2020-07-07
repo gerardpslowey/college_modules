@@ -1,0 +1,131 @@
+body {
+	padding-top: 80px; /* accouting for navbar height*/
+
+}
+
+.overflow-class {
+	overflow-x:hidden;
+	position: relative;
+}
+
+/*--------top bar - component 1 -----------*/
+.navbar {
+	min-height: 80px;
+	padding:0;
+
+
+}
+
+.dcu-logo{
+}
+
+.header-title{
+	font-weight: bold; font-family: Roboto, sans-serif; color: white; font-size: 26px;
+	padding-left: 2vw;
+}
+
+/*not the top part */ 
+
+.main {
+}
+
+/*------------sidebar-------*/
+
+.sidebar {
+	
+	border-bottom:solid;
+	background-color: #F8F8F8;
+}
+
+.searchy {
+	margin: auto;
+	margin-top:20px;
+	padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {      /*mobile first design, media query makes it look nice on desktop too */
+  .sidebar {
+    height:100vh;      
+    border-right: solid;          
+  }
+}
+
+/*--------------sub header bar -------------*/
+
+.subHeaderBar{
+	padding-top: 10px;
+	background-color: #F8F8F8;
+	border-bottom: solid;
+}
+
+/*----------timetable area---------*/
+.table {
+  background-color: #eee;
+  height: 100%;
+  margin-bottom: 0;
+}
+.table-responsive {
+  height: 80%;
+}
+
+.coloured-cell {
+	background-color: yellow;
+	padding: 0;
+	margin: 0;
+
+}
+
+/*--------------Artist Tiles Modal CSS ----------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+
+}
+
+@media only screen and (max-width: 600px) {
+	.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+
+}
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bg-darkgrey {
+  background-color: darkgrey !important; 
+}
